@@ -7,10 +7,24 @@ body{
 }
 
 header{
-    background-color: #d10000;
+    background-color: #df5f5f;
     color: #fff;
     text-align: center;
     padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
 }
 
 section{
@@ -23,6 +37,12 @@ section{
 h2{
     color: #4CAF50;
     text-align: center;
+}
+
+#products{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .product{
@@ -38,6 +58,15 @@ h2{
     height: auto;
     border-radius: 5px;
     margin-top: 10px;
+}
+
+.product ul{
+    list-style: none;
+    text-align: left;
+    padding: 0;
+}
+.product ul li{
+    margin-top: 5px;
 }
 
 .email-field{
@@ -62,4 +91,38 @@ footer{
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     text-align: center;
     color: #fff;
+}
+
+.searchProducts{
+    position: relative;
+    display: inline-block;
+}
+
+.searchProducts input{
+   /* padding-right: 40px;
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+    */
+     width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      transition: border 0.3s;
+
+}
+
+.searchProducts button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: left;
+    width: 20%;
+    padding: 25px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #000;
+    
 }
